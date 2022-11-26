@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Castellanos Landazabal">
+    <meta name="email" content="cast0306@algonquinlive.com">
+    <title>MovieJoe - Register</title>
+    <script src="scripts/jquery-3.6.1.min.js"></script>
+    <script src="scripts/func.js"></script>
+    <script src="scripts/register.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/movie.css">  
+</head>
+<body>
+    <header id="header">
+        <a href="index.html"><img src="pictures/logo.jpeg" alt="logo"></a>
+        <nav>
+            <a href="catalog.html?choice=movie&page=1">Movies</a>
+            <a href="catalog.html?choice=series&page=1">Tv Shows</a>
+        </nav>
+        <div>
+            <input type="text" placeholder="Search..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </header>
+    <div id="contentDiv">
+        <form name="registerForm" id="registerForm" action="">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <div>
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" id="confirmpassword">
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+        <p id="errorMessage"></p>
+        <a href="register.html">Login</a>
+    </div>
+    <footer id="footer">
+        <a href="index.html">Home</a>
+        <a href="catalog.html?choice=movie&page=1">Movies</a>
+        <a href="catalog.html?choice=series&page=1">Tv Shows</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </footer>
+</body>
+</html>

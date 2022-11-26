@@ -1,0 +1,19 @@
+#contentDiv {
+    display: flex;
+    margin-top: 20px;
+}
+
+#mainInfoDiv {
+    margin-left: 5%;
+    width: 75%;
+}
+
+#imageDiv {
+    width: 20%;
+    min-width: 166px;
+    margin-left: 5%;
+}
+
+#favoriteDiv {
+    background-color: aquamarine;
+}

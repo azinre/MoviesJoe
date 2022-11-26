@@ -1,0 +1,46 @@
+
+
+#contentDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+aside button {
+    inline-size: 50%;
+}
+
+#moviesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#moviesCatalog {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#moviesCatalog a{
+    margin: 10px;
+    transition: all .4s ease-in-out; 
+}
+
+#moviesCatalog a:hover {
+    transform: scale(1.1);
+}
+
+#pageBar {
+    display: flex;
+    justify-content: space-around;
+}
