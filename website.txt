@@ -1,0 +1,32 @@
+header
+-logo
+-fix serch bar and login
+-vvertically align nav links
+
+
+footer
+-needs to be at bottom of page
+
+filter sidebar
+-change buttons to text
+-change background
+-align properly
+
+
+main page
+-add margin
+-style scroll bar
+
+top movies// top tv
+-fix nav and footer
+
+login page form// sign up form
+-style form
+-fix footer
+
+
+individddual page
+-change favorites color
+-change font
+-fix footer
+-resize content
