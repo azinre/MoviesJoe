@@ -1,5 +1,7 @@
 header
 - make header responsive when resized
+-searchbar text color
+-search icon color
 
 index.html 
 -fix content on main page
