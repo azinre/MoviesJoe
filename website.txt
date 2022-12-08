@@ -1,24 +1,28 @@
 header
-- make header responsive
+- make header responsive when resized
+
+index.html 
+-fix content on main page
 
 footer
--needs to be at bottom of page
--needs content and to be responsive
+-needs to be at bottom of page //done
+-needs content and to be responsive //done
+-make footer responsive
+-add additional content to footer
 
-filter sidebar
--change buttons to text
--change background
--align properly
-
-top movies// top tv
+catalog.html
 -fix page buttons
+  filter sidebar
+  -change buttons to text
+  -change background
+  -align properly
 
-login page form// sign up form
+login.htm l/ sign up
 -style form
--fix footer
+-fix footer //done
 
 
-individddual page
+catalog.html
 -change favorites color
 -change font
 -fix footer
