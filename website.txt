@@ -1,5 +1,5 @@
 header
-- make header responsive when resized
+- make header responsive when resized //done alex
 -searchbar text color
 -search icon color
 
@@ -10,7 +10,7 @@ index.html
 footer
 -needs to be at bottom of page //done
 -needs content and to be responsive //done
--make footer responsive
+-make footer responsive // done alex
 -add additional content to footer
 
 catalog.html
