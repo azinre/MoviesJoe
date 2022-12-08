@@ -5,6 +5,7 @@ header
 
 index.html 
 -fix content on main page
+- image and text that covers it
 
 footer
 -needs to be at bottom of page //done
