@@ -13,7 +13,7 @@
 }
 
 .signopt{
-    width: 16%;
+    width: 17.5%;
     height: 30px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -21,17 +21,24 @@
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
-    background-color: #d6d6d6;
-    color: black;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   
 }
 
-#registerForm {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    font-family: 'Montserrat', sans-serif;
-    color: #8b929a;
+#registerForm input{
+    color: black;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    border-radius: 5px;
+    font-size: 15pt;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
 }
 
 #registerForm div{
@@ -39,12 +46,9 @@
     flex-direction: column;
 }
 
-#registerForm input {
-    color: black;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    font-size: 15pt;
+#register:hover{
+    color: rgb(227, 234, 240);
+    cursor: pointer;
 }
 
 #errorMessage {
@@ -59,6 +63,15 @@
     margin-bottom: 50px;
 }
 
+#submitBtn{
+    background-color: #ffd100;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+
 #submitBtn:hover{
-    background-color: lightgray;
+    color: #000000;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
 }

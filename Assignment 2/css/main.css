@@ -108,6 +108,14 @@ h3 {
     color: #8b929a;
 }
 
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-family: 'Montserrat', sans-serif;
+    color: #8b929a;
+}
+
 
 @media all and (max-width: 600px){
     .navi{
@@ -191,6 +199,9 @@ h3 {
     }
     #favoriteDiv{
         flex-direction: row;
+    }
+    #registerForm{
+        width: 70%;
     }
     
     
