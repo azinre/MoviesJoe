@@ -1,7 +1,7 @@
 #formDiv1 {
     background-color: rgb(24, 24, 32);
     padding: 20px;
-    width: 80%;
+    width: 70%;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -20,11 +20,27 @@
     margin-bottom: 20px;
 }
 
+#contactForm{
+    text-align: center;
+}
+
 .formDiv3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    color: #8b929a;
+}
+
+.formDiv3 input[type = text], .formDiv3 input[type = tel], .formDiv3 input[type = email]{
+    color: black;
+    padding: 10px 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    
 }
 
 .formDiv3 label {
@@ -43,10 +59,26 @@
 }
 
 #submitButton {
+    color: black;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
-    font-size: 20pt;
+    font-size: 14pt;
     width: 200px;
     height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    border: none;
+}
+
+#submitButton:hover{
+    cursor: pointer;
+}
+
+textarea{
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border: none;
 }
