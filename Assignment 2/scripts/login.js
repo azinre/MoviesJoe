@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    updateHeader();
     const validateLogin = function(e){
         e.preventDefault();
         let username = getCookie('username');

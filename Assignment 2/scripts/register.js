@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    updateHeader();
     const registerUser = function(e){
         e.preventDefault();
         if('' === $('#username').val()){
