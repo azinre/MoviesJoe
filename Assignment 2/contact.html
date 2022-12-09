@@ -9,7 +9,7 @@
     <title>MovieJoe - Contact</title>
     <script src="scripts/jquery-3.6.1.min.js"></script>
     <script src="scripts/func.js"></script>
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
     <section>
         <h2 id= "contactForm">Contact</h2>
         <div id="formDiv1">
-            <form action="">
+            <form action="" name="form" id="form">
                 <div id="formDiv2">
                     <div class="formDiv3">
                         <label for="name">Name</label>
@@ -58,6 +58,7 @@
                     </div> 
                 </div>
                 <input id= "submitButton"type="submit" value="Submit">
+                <p id="errorLabel"></p>
             </form>
         </div>
     </section>
