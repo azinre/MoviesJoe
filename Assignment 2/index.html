@@ -12,24 +12,43 @@
     <script src="scripts/home.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">  
 </head>
 <body>
     <header id="header">
-        <a href="index.html"><img src="pictures/logo.jpeg" alt="logo"></a>
-        <nav>
-            <a href="catalog.html?choice=movie&page=1">Movies</a>
-            <a href="catalog.html?choice=series&page=1">Tv Shows</a>
-            <a href="login.html" id="loginHeader">Login</a>
-            <a href="mylist.html?choice=movie&page=1" id="usernameHeader"></a>
-            <a href="" id="logout">Logout</a>
+        <nav class="navi">
+            <a href="index.html"><img src="pictures/logo.png" alt="logo"></a>
+            <div>
+                <input type="text" id="search" placeholder="Search..">
+                <button type="submit" id="searchIcon"><i class="fa fa-search"></i></button>
+                
+            </div>
+            <ul class="naviUl" id="naviUl">
+                <li><a href="catalog.html?choice=movie&page=1">Movies</a></li>
+                <li><a href="catalog.html?choice=series&page=1">Tv Shows</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="mylist.html?choice=movie&page=1" id="usernameHeader"></a></li>
+                <li><a href="" id="logout">Logout</a></li> 
+            </ul> 
+            <div class="ham" id="menuToggle">
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+            </div>            
+                
+            
+            
         </nav>
-        <div>
-            <input type="text" placeholder="Search..">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </div>
     </header>
+    <div class="homeContent">
+        <div class="mainInfo">
+            <h3 id="mainHeader">Create an Account</h3>
+            <p id="subText">Create an account now to favourite and keep track of all of your favourite movies and TV shows.</p>
+            <a href="login.html" id="accountButton">Create Account</a>
+        </div>
+    </div>
     <div>
         <h3>Top Movies</h3>
         <div class="topDisplay" id="topMovies">
@@ -58,4 +77,5 @@
         <a href="">Contact</a>
     </footer>
 </body>
+<script src="scripts/responsivelayout.js"></script>
 </html>

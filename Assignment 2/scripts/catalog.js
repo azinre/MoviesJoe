@@ -6,7 +6,7 @@ $(document).ready(function(){
     let sortItemsData = [];
     let urlParams = getParams(currentUrl);
     let page = parseInt(urlParams.page);
-    let offset = 20*(page-1);
+    let offset = 24*(page-1);
 
     $('#prevBtn').on('click', function(){
         let page = parseInt(urlParams.page);
@@ -48,7 +48,7 @@ $(document).ready(function(){
         sortData(itemsData,'rating');
     sortData(itemsData,urlParams.sort);
     
-    for(let i=offset; i<20+offset;i++){
+    for(let i=offset; i<24+offset;i++){
         $('#moviesCatalog').append(`<a href="itemInfo.html?choice=${urlParams.choice}&id=${itemsData[i].netflix_id}"><img src="${itemsData[i].img}" alt="image ${itemsData[i].title}"></a>`);
     }
 

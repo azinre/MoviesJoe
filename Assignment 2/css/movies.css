@@ -1,20 +1,34 @@
 
 
 #contentDiv {
-    display: flex;
     justify-content: space-between;
 }
 
 aside {
     display: flex;
     top: 0;
-    flex-direction: column;
     align-items: center;
-    width: 20%;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    justify-content: center;
 }
 
 aside button {
-    inline-size: 50%;
+    margin: 5px 12px;
+    padding: 10px 25px;
+    width: 80px;
+    color: #d6d6d6;
+    background-color: rgb(24, 24, 32);
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+aside button:hover{
+    background-color: #ffd100;
+    color: black;
+    cursor: pointer;
 }
 
 #moviesSection {
@@ -22,6 +36,7 @@ aside button {
     flex-direction: column;
     align-items: center;
     width: 80%;
+    margin:auto;
 }
 
 #moviesCatalog {

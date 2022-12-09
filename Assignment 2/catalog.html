@@ -16,34 +16,45 @@
 </head>
 <body>
     <header id="header">
-        <a href="index.html"><img src="pictures/logo.jpeg" alt="logo"></a>
-        <nav>
-            <a href="catalog.html?choice=movie&page=1">Movies</a>
-            <a href="catalog.html?choice=series&page=1">Tv Shows</a>
-            <a href="login.html" id="loginHeader">Login</a>
-            <a href="mylist.html?choice=movie&page=1" id="usernameHeader"></a>
-            <a href="" id="logout">Logout</a>
+        <nav class="navi">
+            <a href="index.html"><img src="pictures/logo.png" alt="logo"></a>
+            <div>
+                <input type="text" id="search" placeholder="Search..">
+                <button type="submit" id="searchIcon"><i class="fa fa-search"></i></button>
+                
+            </div>
+            <ul class="naviUl" id="naviUl">
+                <li><a href="catalog.html?choice=movie&page=1">Movies</a></li>
+                <li><a href="catalog.html?choice=series&page=1">Tv Shows</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="mylist.html?choice=movie&page=1" id="usernameHeader"></a></li>
+                <li><a href="" id="logout">Logout</a></li> 
+            </ul> 
+            <div class="ham" id="menuToggle">
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+            </div>            
+                
+            
+            
         </nav>
-        <div>
-            <input type="text" placeholder="Search..">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </div>
     </header>
-    <div id="contentDiv">
-        <aside>
-            <h3>Sort by</h3>
-            <button id="ratingSort">Rate</button>
-            <button id="dateSort">Date</button>
-            <button id="titleSort">Title</button>
-        </aside>
+    <div id="contentDiv">     
         <div id="moviesSection">
             <h2 id="catalogTitle"></h2>
+            <aside>
+                <p id="sortOption">Sorting Options:</p>
+                <button id="ratingSort">Rating</button>
+                <button id="dateSort">Date</button>
+                <button id="titleSort">Title</button>
+            </aside>
             <div id="moviesCatalog">
             </div>
             <div id="pageBar">
-                <button id="prevBtn"></button>
+                <button id="prevBtn"><i class="fa fa-fast-backward fa-2x" ></i></button>
                 <p id="pageText">Page</p>
-                <button id="nextBtn"></button>
+                <button id="nextBtn"><i class="fa fa-fast-forward fa-2x" ></i></button>
             </div>
         </div>
     </div>
@@ -55,4 +66,5 @@
         <a href="">Contact</a>
     </footer>
 </body>
+<script src="scripts/responsivelayout.js"></script>
 </html>

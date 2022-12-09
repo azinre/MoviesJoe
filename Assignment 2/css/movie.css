@@ -15,5 +15,6 @@
 }
 
 #favoriteDiv {
-    background-color: aquamarine;
+    background-color: rgb(24, 24, 32);
+    border-radius: 5px;
 }

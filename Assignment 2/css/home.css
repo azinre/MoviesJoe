@@ -1,12 +1,14 @@
 .topDisplay {
     display: flex;
     flex-direction: row;
-    background-color: #d6d6d6;
     align-items: center;
     border-radius: 10px;
-    height: 320px;
+    height: 325px;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+    width: 90%;
+    margin: auto;
+    scrollbar-color: rgb(24, 24, 32)  rgb(14, 14, 19);;
 }
 
 .topDisplay img{
