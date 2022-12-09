@@ -13,7 +13,7 @@
 }
 
 .signopt{
-    width: 16%;
+    width: 17.5%;
     height: 30px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -23,16 +23,11 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
     background-color: #d6d6d6;
     color: black;
+    text-align: center;
   
 }
 
-#loginForm {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    font-family: 'Montserrat', sans-serif;
-    color: #8b929a;
-}
+
 
 #loginForm div{
     display: flex;
@@ -61,4 +56,5 @@
 
 #submitBtn:hover{
     background-color: lightgray;
+    cursor: pointer;
 }

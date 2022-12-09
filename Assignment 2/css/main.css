@@ -100,6 +100,14 @@ h3 {
     height: 60vh;
 }
 
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-family: 'Montserrat', sans-serif;
+    color: #8b929a;
+}
+
 
 @media all and (max-width: 600px){
     .navi{
@@ -150,6 +158,35 @@ h3 {
     aside{
         flex-direction: column;
     }
+    #signbutton{
+        width: 70%;
+    }
+    #loginForm{
+        width: 70%;
+    }
+    #movieNav, #tvNav{
+        margin-left: 30px;
+    }
+    #aboutContent h2{
+        text-align: center;
+    }
+    #aboutContent p{
+        text-align: center;
+        margin: 0 auto 60px auto;
+    }
+    #aboutContent{
+        margin: 0;
+    }
+    #socialIcon{
+        padding-left: 45px;
+    }
+    #title{
+        font-size: 22pt;
+    }
+    #info, #synopsis{
+        margin-right: 10px;
+    }
+    
 }
 
 #sortOption{
@@ -311,5 +348,14 @@ footer a:hover{
 input, select, textarea {
     color: #dbe6f4;
 }
+
+#register{
+    font-family: 'Lato', sans-serif; 
+}
+
+#register:hover{
+    color: #8b929a;
+}
+
 
 
