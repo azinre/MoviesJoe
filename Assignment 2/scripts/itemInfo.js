@@ -94,4 +94,5 @@ $(document).ready(function(){
         }
         console.log(getCookie('favorites'));
     });
+    searchFunction('');
 });
