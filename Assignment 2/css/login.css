@@ -1,0 +1,64 @@
+.mainInfoLogin{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contentDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.signopt{
+    width: 16%;
+    height: 30px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    background-color: #d6d6d6;
+    color: black;
+  
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-family: 'Montserrat', sans-serif;
+    color: #8b929a;
+}
+
+#loginForm div{
+    display: flex;
+    flex-direction: column;
+}
+
+#loginForm input {
+    color: black;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 15pt;
+}
+
+#errorMessage {
+    margin-bottom: 20px;
+
+}
+
+#register {
+    color: #8b929a;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#submitBtn:hover{
+    background-color: lightgray;
+}

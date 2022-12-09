@@ -12,7 +12,7 @@
     <script src="scripts/login.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/movie.css">  
+    <link rel="stylesheet" href="css/login.css">  
 </head>
 <body>
     <header id="header">
@@ -26,7 +26,7 @@
             <ul class="naviUl" id="naviUl">
                 <li><a href="catalog.html?choice=movie&page=1">Movies</a></li>
                 <li><a href="catalog.html?choice=series&page=1">Tv Shows</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a id="loginHeader" href="login.html">Login</a></li>
                 <li><a href="mylist.html?choice=movie&page=1" id="usernameHeader"></a></li>
                 <li><a href="" id="logout">Logout</a></li> 
             </ul> 
@@ -37,7 +37,13 @@
             </div>                       
         </nav>
     </header>
+    <div class="mainInfoLogin">
+        <h3 id="mainHeader">Welcome Back</h3>
+        <p id="subText">Create an account now to favourite and keep track of all of your favourite movies and TV shows.</p>
+    </div>
     <div id="contentDiv">
+        <a href="register.html" id="signbutton" class="signopt">Sign In via Google</a>
+        <a href="register.html" id="signbutton" class="signopt">Sign In via Facebook</a>
         <form name="loginForm" id="loginForm" action="">
             <div>
                 <label for="username">Username</label>
@@ -47,17 +53,17 @@
                 <label for="password">Password</label>
                 <input type="password" id="password">
             </div>
-            <input type="submit" value="Login">
+            <input id="submitBtn" type="submit" value="Login">
         </form>
         <p id="errorMessage"></p>
-        <a href="register.html">Sign Up</a>
+        <a id="register" href="register.html">Don't have an account? Register</a>
     </div>
     <footer id="footer">
         <a href="index.html">Home</a>
         <a href="catalog.html?choice=movie&page=1">Movies</a>
         <a href="catalog.html?choice=series&page=1">Tv Shows</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </footer>
 </body>
 </html>

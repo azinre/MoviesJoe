@@ -1,0 +1,52 @@
+#formDiv1 {
+    background-color: rgb(24, 24, 32);
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#formDiv2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#formDiv2 input {
+    margin-bottom: 20px;
+}
+
+.formDiv3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.formDiv3 label {
+    align-self: start;
+}
+
+#formDiv3 input {
+    padding: 10px;
+    width: 250px;
+    height: 10px;
+}
+
+#description {
+    width: 450px;
+    height: 200px;
+}
+
+#submitButton {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 20pt;
+    width: 200px;
+    height: 40px;
+}
