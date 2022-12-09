@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     updateHeader();
+    
 	const currentUrl = document.URL;
     var getParams = function (url) {
         var params = {};
@@ -42,10 +43,9 @@ $(document).ready(function(){
     $('#genres').text(`Genres: ${genres[randomGenre1]}, ${genres[randomGenre2]}`);
     $('#episodes').text(`Episodes: ${randomEpisodes}`);
     $('#awards').text(`Awards: None`);
-
-    $('#favoriteDiv').click(function(){
-        console.log('addtofavorite');
-        console.log(item.title_type);
+    $("#favoriteIcon").hide()
+    let login = sessionStorage.getItem('login');
+    if(login === 'true'){
         let favorites = '';
         if(item.title_type === 'movie'){
             favorites = getCookie('favoritesMovies');
@@ -54,18 +54,37 @@ $(document).ready(function(){
         }
         let favoritesArray = favorites.split(',');
         let index = favoritesArray.indexOf(urlParams.id);
-        console.log(favorites);
-        console.log(index);
+        $("#favoriteIcon").hide()
         if(index === -1){
-            console.log('set cookie');
+            $("#favoriteIcon").hide()
+        }else{
+            $("#favoriteIcon").show()
+        }
+    }
+    
+    $('#favoriteDiv').click(function(){
+        if(login !== 'true'){
+            $("#favoriteIcon").hide()
+            return
+        }
+        let favorites = '';
+        if(item.title_type === 'movie'){
+            favorites = getCookie('favoritesMovies');
+        }else{
+            favorites = getCookie('favoritesSeries');
+        }
+        let favoritesArray = favorites.split(',');
+        let index = favoritesArray.indexOf(urlParams.id);
+        if(index === -1){
+            $("#favoriteIcon").show()
             favoritesArray.push(urlParams.id);
-            console.log(favoritesArray);
             if(item.title_type === 'movie'){
                 setCookie('favoritesMovies', favoritesArray);
             }else{
                 setCookie('favoritesSeries', favoritesArray);
             }
         }else{
+            $("#favoriteIcon").hide()
             favoritesArray.splice(index,1);
             if(item.title_type === 'movie'){
                 setCookie('favoritesMovies', favoritesArray);

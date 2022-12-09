@@ -1,4 +1,4 @@
-#contentDiv {
+/* #contentDiv {
     display: flex;
     margin-top: 20px;
 }
@@ -17,4 +17,71 @@
 #favoriteDiv {
     background-color: rgb(24, 24, 32);
     border-radius: 5px;
+} */
+
+#contentDiv {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    color:aliceblue;
+
+}
+
+#mainInfoDiv {
+    margin-left: 5%;
+    width: 60%;
+    color: aliceblue;
+}
+
+#imageDiv {
+    width: 20%;
+    min-width: 166px;
+    margin-left: 5%;
+}
+
+#favoriteDiv {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color:#d6d6d6 ;
+    height: 40px;
+    width: 168px;
+    text-align: left;
+    
+}
+
+#favoriteDiv img {
+    width: 25px;
+    height: 25px;
+}
+
+#favoriteDiv:hover{
+    background-color: #9e9e9e;
+}
+
+.loginName{
+    color:aliceblue;
+    
+}
+#info{
+    color: aliceblue;
+}
+#synopsis{
+    margin-top: 15px;
+    color: aliceblue;
+}
+#title{
+    color: aliceblue;
+    font-size: 28pt;
+}
+#genres{
+    margin-top: 15px;
+    color: aliceblue;
+}
+#episodes{
+    margin-top: 15px;
+    color: aliceblue;
+}
+#awards{
+    margin-top: 15px;
+    color: aliceblue;
 }
