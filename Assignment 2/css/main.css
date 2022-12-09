@@ -100,6 +100,11 @@ h3 {
     height: 60vh;
 }
 
+#description {
+    width: 450px;
+    height: 200px;
+}
+
 #loginForm {
     display: flex;
     flex-direction: column;
@@ -159,6 +164,9 @@ h3 {
     }
     h3{
         text-align: center;
+    }
+    #description {
+        width: 200px;
     }
     #accountButton{
         text-align: center;

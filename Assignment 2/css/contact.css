@@ -53,10 +53,7 @@
     height: 10px;
 }
 
-#description {
-    width: 450px;
-    height: 200px;
-}
+
 
 #submitButton {
     color: black;
@@ -81,4 +78,8 @@ textarea{
     padding: 10px;
     margin: 10px;
     border: none;
+}
+
+#errorLabel {
+    color: aliceblue;
 }
