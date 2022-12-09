@@ -76,3 +76,37 @@ const getParams = function (url) {
 
     return params;
 };
+
+const searchFunction = function (option) {
+    $('#searchIcon').click(function(){
+		let searchVal = ''+ $('#search').val();
+		let findVal = -1;
+		let moviesData = JSON.parse(sessionStorage.getItem('moviesData'));
+		let seriesData = JSON.parse(sessionStorage.getItem('seriesData'));
+		if(searchVal !== ''){
+            if(option === 'movie' || option === ''){
+                for (movie of moviesData){
+                    console.log(movie.title);
+                    findVal= movie.title.search(new RegExp(searchVal, "i"));
+                    console.log(findVal);
+                    if(findVal !== -1){
+                        console.log('open window');
+                        window.open(`itemInfo.html?choice=movie&id=${movie.netflix_id}`, '_self');
+                        return 
+                    }
+                }
+            }
+            if(option === 'series' || option === ''){
+                for (serie of seriesData){
+                    findVal= serie.title.search(new RegExp(searchVal, "i"));
+                    console.log(findVal);
+                    if(findVal !== -1){
+                        console.log('open window');
+                        window.open(`itemInfo.html?choice=series&id=${serie.netflix_id}`, '_self');
+                        return 
+                    }
+                }
+            }
+		}
+	});
+};

@@ -27,5 +27,6 @@ $(document).ready(function(){
     // });
 
 	document.registerForm.addEventListener("submit", registerUser);
+    searchFunction('');
 
 });

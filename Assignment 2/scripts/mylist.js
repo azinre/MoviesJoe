@@ -72,5 +72,6 @@ $(document).ready(function(){
     }
 
     $('#pageText').text(urlParams.page);
+    searchFunction(urlParams.choice);
 	
 });

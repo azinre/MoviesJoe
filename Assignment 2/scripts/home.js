@@ -52,16 +52,6 @@ $(document).ready(function(){
 		displayData(seriesData,'series');
 	}
 
-	// for(let i=0; i<10;i++){
-	// 	$('#topMovies').append(`<a href="itemInfo.html?choice=movie&id=${moviesData[i].netflix_id}"><img src="${moviesData[i].img}" alt="image ${moviesData[i].title}"></a>`);
-	// 	$('#topSeries').append(`<a href="itemInfo.html?choice=series&id=${seriesData[i].netflix_id}"><img src="${seriesData[i].img}" alt="image ${seriesData[i].title}"></a>`);
-	// }
-	
-	// let recentMovies = sortData(moviesData, 'date');
-	// let recentSeries = sortData(seriesData, 'date');
-	// for(let i=0; i<10;i++){
-	// 	$('#recentMovies').append(`<a href="itemInfo.html?choice=movie&id=${recentMovies[i].netflix_id}"><img src="${recentMovies[i].img}" alt="image ${recentMovies[i].title}"></a>`);
-	// 	$('#recentSeries').append(`<a href="itemInfo.html?choice=series&id=${recentSeries[i].netflix_id}"><img src="${recentSeries[i].img}" alt="image ${recentSeries[i].title}"></a>`);
-	// }
+	searchFunction('');
 
 });

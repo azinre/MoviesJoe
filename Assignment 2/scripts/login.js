@@ -19,6 +19,7 @@ $(document).ready(function(){
         sessionStorage.setItem('login', true);
         window.location.href = 'index.html';
     };
+    searchFunction('');
 
     // $('#username').addEventListener("blur", function(){
     //     if(this.value !== ""){
