@@ -75,3 +75,7 @@
     background-color: rgb(240, 240, 240);
     cursor: pointer;
 }
+
+#errorMessage {
+    color: aliceblue;
+}
